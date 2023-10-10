@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = +prompt('hệ số của x**2')
+        let b = +prompt('hệ số của x')
+        let c = +prompt('tham số ')
+        let d = b**2 - 4 * a * c
+        let e = -b / 2*a
+        if (d > 0) {
+            let x1 = (-b + Math.sqrt(d) ) / (2 * a)
+            let x2 = (-b - Math.sqrt(d) ) / (2 * a)
+            alert("X1=" + x1 + "&" + "X2=" + x2 )
+        } else if (d = 0) {
+            alert("ptrinh có 1 nghiệm duy nhất X=" + e )
+        } else {
+            alert('ptrinh vô nghiệm')
+        }
+    </script>
+</body>
+</html>
